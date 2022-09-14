@@ -1,0 +1,61 @@
+/* Adaptación de Media Queries*/
+@media screen and (max-width: 400px) {
+    .titulo{
+        font-size: 40px;
+    }
+    .describa{
+        font-size: 22px;
+    }
+    .grid-describa{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+
+    }
+    
+    .items__gif{
+        width: 300px;
+        height: 300px;
+
+    }
+    .items__gif:hover{
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 7px 7px 10px $box-shadow; 
+        object-fit: cover;
+    }
+    .formulario__order {
+        display: grid;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .titulo{
+        font-size: 43px;
+    }
+    .grid-describa{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        gap: 10px;
+
+    }
+
+    .items__gif{
+        width: 250px;
+        height: 250px;
+
+    }
+    
+    .items__gif:hover{
+        width: 350px;
+        height: 350px;
+        border-radius: 10px;
+        box-shadow: 7px 7px 10px $box-shadow; 
+        object-fit: cover;
+    }
+}

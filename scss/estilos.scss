@@ -2,6 +2,7 @@
 @import "variables.scss";
 @import "reset.scss";
 @import "fuentes.scss";
+@import "mediaqueries.scss";
 
 
 body{
@@ -37,7 +38,7 @@ header {
 
 .header__titulo{
     /*mixin*/
-    @include flexi-columna-acentro;
+    @include flexi-fila-acentro;
 
 }
 .logo{
@@ -67,7 +68,7 @@ header {
 
 h1{
     font-family: 'Permanent Marker', cursive;
-    font-size: 60px;
+    font-size: 70px;
     color: $color-h1;
     text-align: center;
     text-shadow: 2px 4px 2px $sombra-texto;
@@ -78,7 +79,11 @@ h1:hover{
     text-shadow: 5px 6px 2px $sombra-texto;
 }
 
-
+.menu__hide{
+    @extend h1;
+    font-size: 35px;
+    text-align: center;
+}
 .menu {
     display:block;
     text-align: map-get($menu-style, centro);
@@ -88,7 +93,7 @@ h1:hover{
       
 }
 .menu__boton{
-    display: inline-block;
+    @extend .menu;
     background-color: $color-menuboton;
     margin-top: 5px;
     padding-left: 1%;
@@ -97,9 +102,11 @@ h1:hover{
     margin:1%;
     border-radius: 10px;
     box-shadow: 7px 7px 15px $box-shadow; 
+    
 }
 .ancla{
     text-decoration: none;
+    margin: 10px;
 }
 
 .menu__boton:hover{
@@ -413,67 +420,6 @@ footer {
 }
 
 
-/* Adaptación de Media Queries*/
-@media screen and (max-width: 400px) {
-    .titulo{
-        font-size: 40px;
-    }
-    .describa{
-        font-size: 22px;
-    }
-    .grid-describa{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        gap: 10px;
-
-    }
-    
-    .items__gif{
-        width: 300px;
-        height: 300px;
-
-    }
-    .items__gif:hover{
-        width: 350px;
-        height: 350px;
-        border-radius: 10px;
-        box-shadow: 7px 7px 10px $box-shadow; 
-        object-fit: cover;
-    }
-    .formulario__order {
-        display: grid;
-        grid-template-rows: auto auto auto;
-    }
-}
-
-
-@media screen and (max-width: 800px) {
-    .titulo{
-        font-size: 43px;
-    }
-    .grid-describa{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        gap: 10px;
-
-    }
-
-    .items__gif{
-        width: 250px;
-        height: 250px;
-
-    }
-    
-    .items__gif:hover{
-        width: 350px;
-        height: 350px;
-        border-radius: 10px;
-        box-shadow: 7px 7px 10px $box-shadow; 
-        object-fit: cover;
-    }
-}
 
 
 
