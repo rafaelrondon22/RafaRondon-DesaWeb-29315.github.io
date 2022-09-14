@@ -1,13 +1,6 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400&family=Roboto&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /* Adaptación de Media Queries*/
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400&family=Roboto&display=swap");
 @media screen and (max-width: 400px) {
   .titulo {
     font-size: 40px;
@@ -17,9 +10,7 @@
   }
   .grid-describa {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
+    grid-template-rows: 50% auto;
   }
   .items__gif {
     width: 300px;
@@ -45,9 +36,7 @@
   }
   .grid-describa {
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto;
-    gap: 10px;
+    grid-template-rows: 50% auto;
   }
   .items__gif {
     width: 250px;
@@ -63,6 +52,13 @@
        object-fit: cover;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   height: 100vh;
   background-color: beige;
@@ -72,7 +68,7 @@ body {
   background-color: beige;
   display: grid;
   grid-template-areas: "header header header" "servicios servicios servicios" "footer footer footer";
-  grid-template-rows: 0.5fr 2fr 1fr;
+  grid-template-rows: 0.5fr 2.5fr 0.5fr;
   grid-template-columns: 20% auto 10%;
   height: 100vh;
   row-gap: 1px;

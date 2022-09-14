@@ -1,8 +1,9 @@
+@import "mediaqueries.scss";
 @import "mixin.scss";
 @import "variables.scss";
 @import "reset.scss";
 @import "fuentes.scss";
-@import "mediaqueries.scss";
+
 
 
 body{
@@ -19,7 +20,7 @@ grid-template-areas:
  "header header header"
  "servicios servicios servicios"
  "footer footer footer";
-grid-template-rows: 0.5fr 2fr 1fr ;
+grid-template-rows: 0.5fr 2.5fr 0.5fr;
 grid-template-columns: 20% auto 10%;
 height: 100vh;
 row-gap: 1px;
