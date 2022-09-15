@@ -8,10 +8,6 @@
   .describa {
     font-size: 22px;
   }
-  .grid-describa {
-    display: grid;
-    grid-template-rows: 50% auto;
-  }
   .items__gif {
     width: 300px;
     height: 300px;
@@ -33,10 +29,6 @@
 @media screen and (max-width: 800px) {
   .titulo {
     font-size: 43px;
-  }
-  .grid-describa {
-    display: grid;
-    grid-template-rows: 50% auto;
   }
   .items__gif {
     width: 250px;
@@ -279,8 +271,17 @@ main {
 }
 
 .grid-describa {
-  display: grid;
-  grid-template-columns: 50% auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .items-describa {
@@ -319,8 +320,17 @@ main {
 }
 
 .formulario__order {
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .localiza {

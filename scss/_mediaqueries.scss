@@ -5,13 +5,7 @@
     }
     .describa{
         font-size: 22px;
-    }
-    .grid-describa {
-        display: grid;
-        grid-template-rows: 50% auto;
-
-    }
-    
+    }    
     .items__gif{
         width: 300px;
         height: 300px;
@@ -35,11 +29,6 @@
     .titulo{
         font-size: 43px;
     }
-    .grid-describa {
-        display: grid;
-        grid-template-rows: 50% auto;
-
-    }
 
     .items__gif{
         width: 250px;
@@ -56,3 +45,5 @@
         object-fit: cover;
     }
 }
+
+

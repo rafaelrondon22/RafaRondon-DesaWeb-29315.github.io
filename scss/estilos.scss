@@ -190,8 +190,10 @@ main {
 }
 
 .grid-describa{
-    display: grid;
-    grid-template-columns: 50% auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
     
 }
 
@@ -222,8 +224,10 @@ main {
 
 
 .formulario__order{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display:flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-around;
     
 }
 .localiza{
