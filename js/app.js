@@ -22,7 +22,7 @@ function service (nombre,documento,fecha,servicio){
         console.log("Fecha    : " + this.fecha);
         console.log("Nombre del Servicio: ");
         this.servicio.forEach(serv => {
-            console.log(`${serv[1]} / Tarifa por: ${serv[2]} Cantidad de Km: ${serv[4]} Precio por Km: ${serv[3]} `)
+            console.log(`${serv[1]} / Tarifa por: ${serv[2]} / Cantidad de Km: ${serv[4]} / Precio por Km: ${serv[3]} `)
         });
         console.log(`El total de la reserva es: ${this.totalReserva} pesos`);
         alert(`El total de la reserva es: ${this.totalReserva} pesos`);
@@ -40,9 +40,9 @@ let tipoServ=[
     [5,'Viaje a Santa Clara-Mar de Plata-Necochea','1 Km',100]
 ]
 // llamado a funcion service//
-let nombreCliente = prompt("Ingrese su nombre para reservar un servicio");
-let documentoCliente = prompt("Ingrese su documento para reserva un servicio");
-let fechaActual=prompt("Ingrese la fecha de la solicitud del servicio");;
+let nombreCliente = prompt("Ingrese su Nombre para Reservar un servicio");
+let documentoCliente = prompt("Ingrese su Numero de Documento para reserva un servicio");
+let fechaActual=prompt("Ingrese la Fecha de la solicitud del servicio");;
 let obj =new service(nombreCliente,documentoCliente,fechaActual,serv);
 let continuarReserva="si";
 let servSeleccionado= [];
