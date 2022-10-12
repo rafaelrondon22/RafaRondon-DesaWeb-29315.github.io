@@ -33,7 +33,7 @@ function service (nombre,documento,fecha,servicio){
 let serv = [];
 
 let tipoServ=[
-    [1,'Traslado al Vete','1 Km',400],
+    [1,'Traslado al Veterinario','1 Km',400],
     [2,'Viaje a la Peluqueria','1 Km',400],
     [3,'Paseo con tu mascota','1 Km',500],
     [4,'Viaje a Cariló-Gesell-Mar de las Pampas','1 Km',150],
