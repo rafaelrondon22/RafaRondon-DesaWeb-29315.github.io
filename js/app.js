@@ -1,3 +1,13 @@
+//Variables
+verSolicitud = document.getElementById("verSolicitud"),
+modalSolicitud = document.getElementById("Solicitud"),
+//Ver Solicitud
+verSolicitud.addEventListener("click", (e) => {
+  e.preventDefault();
+  modalSolicitud.showModal();
+  pintarPedido();
+});
+
 // Funcion para determinar servicio//
 function service (nombre,documento,fecha,servicio){
     this.nombre = nombre;
@@ -80,3 +90,4 @@ do {
 
 obj.calcularTotal();
 obj.mostrarReserva();
+
