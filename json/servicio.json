@@ -6,7 +6,7 @@
       "detalle": "Servicio de Traslado de Visita al Veterinario",
       "precio": 2000,
       "retorno": false,
-      "imgSrc": "/image/Veterinario/Veterinario.png"
+      "imgSrc": "/images/veterinario/veterinario.png"
     },
     {
       "id": 2,
@@ -15,7 +15,7 @@
       "detalle": "Servicio de traslado a la Peluqueria Canina.",
       "precio": 2000,
       "retorno": false,
-      "imgSrc": "/image/Veterinario/Peluqueria.jpeg"
+      "imgSrc": "/images/Veterinario/Peluqueria.jpg"
     },
     {
       "id": 3,
@@ -24,7 +24,7 @@
       "detalle": "Servicios de Paseo con tu mascota",
       "precio": 2500,
       "retorno": false,
-      "imgSrc": "/image/Veterinario/paseo2.jpeg"
+      "imgSrc": "/images/Veterinario/paseo2.jpg"
     },
     {
       "id": 4,
@@ -33,7 +33,7 @@
       "detalle": "Servicio de Traslado a la Costa - Mar de Plata - Necochea.",
       "precio": 50000,
       "retorno": false,
-      "imgSrc": "/image/Veterinario/playa.png"
+      "imgSrc": "/images/Veterinario/playa.png"
     },
     {
       "id": 5,
@@ -42,34 +42,34 @@
       "detalle": "Servicio de Traslado a la Costa - Pinamar - Carilo",
       "precio": 40000,
       "retorno": false,
-      "imgSrc": "/image/Veterinario/carilo.jpg"
+      "imgSrc": "/images/Veterinario/carilo.jpg"
     },
     {
       "id": 6,
       "categoria": "Corta Distancia",
-      "nombre": "Visita al Vete",
-      "detalle": "Servicio de Traslado de Visita al Veterinario",
+      "nombre": "Visita al Vete Con Retorno",
+      "detalle": "Servicio de Traslado de Visita al Veterinario Con Retorno",
       "precio": 3000,
-      "retorno": false,
-      "imgSrc": "/image/Veterinario/veterinario2.jpg"
+      "retorno": true,
+      "imgSrc": "/images/Veterinario/veterinario2.jpg"
     },
     {
       "id": 7,
       "categoria": "Corta Distancia",
-      "nombre": "Traslado a la Peluqueria",
-      "detalle": "Servicio de traslado a la Peluqueria Canina.",
+      "nombre": "Traslado a la Peluqueria Con Retorno",
+      "detalle": "Servicio de traslado a la Peluqueria Canina Con Retorno.",
       "precio": 3000,
       "retorno": true,
-      "imgSrc": "/image/Veterinario/Peluqueria2.jpeg"
+      "imgSrc": "/images/Veterinario/Peluqueria2.png"
     },
     {
       "id": 8,
       "categoria": "Corta Distancia",
-      "nombre": "Nos Vamos de Paseo",
-      "detalle": "Servicios de Paseo con tu mascota",
+      "nombre": "Nos Vamos de Paseo Con Retorno",
+      "detalle": "Servicios de Paseo con tu mascota Con Retorno",
       "precio": 3500,
       "retorno": true,
-      "imgSrc": "/image/Veterinario/paseo3.jpeg"
+      "imgSrc": "/images/Veterinario/paseo3.jpg"
     }
     
   ]

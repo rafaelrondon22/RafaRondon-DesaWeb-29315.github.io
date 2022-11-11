@@ -62,14 +62,93 @@
                     </nav>
                 </div>
             </div>
-            <!-- Boton para visualizar solcitud de servicio -->
-            <div class="nav-menu d-flex justify-content-end">
+            <!-- Boton para visualizar solicitud de servicio -->
+            <div class="nav-menu d-flex justify-content-end flex-grow-1 pe-3">
                 <div class="cantidad" id="cantidad">0</div>
-                <a class="nav-item2 menu__boton" id="verPedido">Ver Solicitud <img src="../Images/Veterinario/carrito.png" alt="carrito"></a>
+                <a class="nav-item2 menu__boton" id="verPedido">Carrito <img src="../Images/Veterinario/carrito.png" alt="carrito"></a>
             </div>
         </header>
         <main>
             <section class="contenedor">
+                <h2 class="titulo">🚕 Conoce Nuestros Servicios</h2>
+            <section id="menu" class="menu">
+                <h3 class="parrafo">Servicios de Distancia Corta</h3>
+                <div class="menu-seccion" id="cardCortaDist">
+                  <!-- Cards dinamicas "Corta Distancia" -->
+                </div>
+                <h3 class="parrafo">Servicios de Larga Distancia</h3>
+                <div class="menu-seccion" id="cardLargaDist">
+                  <!-- Cards dinamicas "Larga Distancia" -->
+                </div>
+            </section>
+            <section class="contenedor">
+                <!-- modal Viaje Retorno -->
+                <dialog id="modalRetorno" class="modal">
+                    <h2>¿El servicio que desea Solictar es un Viaje de Ida y Vuelta?</h2>
+                    <div class="btns-modal-retorno" id="btnsRetorno">
+                        <button value="false" class="btn-retorno no">NO</button>
+                        <button value="true" class="btn-retorno si">SI</button>
+                    </div>
+                </dialog>
+                <!-- modal Fecha Servicio V2 -->
+                <dialog id="modalMesa" class="modal">
+                    <h2>¿En qué número de mesa estás?</h2>
+                    <form action="/">
+                        <label for="numMesa">Mesa número</label>
+                        <input
+                            type="date"
+                            id="fechaSolicitud"
+                            min="2022-01-01"
+                            max="2025-12-31"
+                        />
+                        <button id="btnNumMesa" type="submit">Aceptar</button>
+                    </form>
+                    <p id="valNumMesa" class="valNumMesa"><!-- texto dinámico --></p>
+                </dialog>
+                <!-- modal de distancia-->
+                <dialog id="modalCorta" class="modal">
+                    <h2 id="msjCorta"><!-- el texto sera dinámico --></h2>
+                    <button class="btn-ok">OK</button>
+                </dialog>
+                <!-- modal de solicitud de servicio -->
+                <dialog id="solicitud" class="modal solicitud">
+                    <h3 class="titulo-solicitud">Tu pedido</h3>
+                    <div class="tabla-solicitud">
+                    <table>
+                        <thead>
+                        <tr>
+                            <th>producto</th>
+                            <th>cant.</th>
+                            <th>subtotal</th>
+                            <th>editar</th>
+                        </tr>
+                        </thead>
+                        <tbody id="listaSolicitud">
+                        <!-- contenido dinámico -->
+                        </tbody>
+                        <tfoot class="total-solicitud">
+                        <tr>
+                            <td>TOTAL</td>
+                            <td></td>
+                            <td id="total"></td>
+                            <td></td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    </div>
+                    <div class="btns-solicitud">
+                    <button class="btn-solicitud" id="enviar">ENVIAR SOLICITUD</button>
+                    <button class="btn-solicitud" id="cancelar">CANCELAR</button>
+                    <button class="btn-solicitud" id="falta">DESEO AGREGAR OTRO SERVICIO</button>
+                    </div>
+                </dialog>
+                <!-- modal para enviar solcitudes -->
+                <dialog id="modalEnviarSolicitud" class="modal">
+                    <h2 id="msjEnviarSolicitud"><!-- texto dinámico --></h2>
+                    <button class="btn-ok">OK</button>
+                </dialog>
+            </section>
+            <!-- <section class="contenedor">
                 <h2 class="titulo">🚕 Conoce Nuestros Servicios</h2>
                 <div class="formulario__order">
                     <article class="describa">
@@ -91,7 +170,7 @@
                         <img src="../Images/Veterinario/playa.png" alt="Viaje a la Playa">
                     </article>
                 </div>
-            </section>
+            </section> -->
         </main>
         <footer>
             <h3 class="describa">Redes Sociales</h3>
@@ -115,6 +194,6 @@
     </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
-   <!--  <script src="../js/app.js"></script> -->
+    <script src="../js/app.js"></script>
 </body>
 </html>
