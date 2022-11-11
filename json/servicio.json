@@ -1,165 +1,76 @@
 [
     {
-      "id": 101,
-      "categoria": "Para comer",
-      "nombre": "Papas Fritas",
-      "detalle": "Porción 500gr.",
-      "precio": 1000,
-      "mayorEdad": false,
-      "imgSrc": "/img/101.webp"
+      "id": 1,
+      "categoria": "Corta Distancia",
+      "nombre": "Visita al Vete",
+      "detalle": "Servicio de Traslado de Visita al Veterinario",
+      "precio": 2000,
+      "retorno": false,
+      "imgSrc": "/image/Veterinario/Veterinario.png"
     },
     {
-      "id": 102,
-      "categoria": "Para comer",
-      "nombre": "Nuggets",
-      "detalle": "Porción 12 unidades.",
-      "precio": 1500,
-      "mayorEdad": false,
-      "imgSrc": "/img/102.webp"
+      "id": 2,
+      "categoria": "Corta Distancia",
+      "nombre": "Traslado a la Peluqueria",
+      "detalle": "Servicio de traslado a la Peluqueria Canina.",
+      "precio": 2000,
+      "retorno": false,
+      "imgSrc": "/image/Veterinario/Peluqueria.jpeg"
     },
     {
-      "id": 103,
-      "categoria": "Para comer",
-      "nombre": "Rabas",
-      "detalle": "Porción 300gr.",
-      "precio": 1500,
-      "mayorEdad": false,
-      "imgSrc": "/img/103.webp"
+      "id": 3,
+      "categoria": "Corta Distancia",
+      "nombre": "Nos Vamos de Paseo",
+      "detalle": "Servicios de Paseo con tu mascota",
+      "precio": 2500,
+      "retorno": false,
+      "imgSrc": "/image/Veterinario/paseo2.jpeg"
     },
     {
-      "id": 104,
-      "categoria": "Para comer",
-      "nombre": "Picada",
-      "detalle": "Picada para 2.",
-      "precio": 1800,
-      "mayorEdad": false,
-      "imgSrc": "/img/104.webp"
+      "id": 4,
+      "categoria": "Larga Distancia",
+      "nombre": "Vamos a Mar de Plata...",
+      "detalle": "Servicio de Traslado a la Costa - Mar de Plata - Necochea.",
+      "precio": 50000,
+      "retorno": false,
+      "imgSrc": "/image/Veterinario/playa.png"
     },
     {
-      "id": 105,
-      "categoria": "Para comer",
-      "nombre": "Americana",
-      "detalle": "Hamburguesa de res, lechuga, tomate, cheddar y bacon.",
-      "precio": 1900,
-      "mayorEdad": false,
-      "imgSrc": "/img/105.webp"
+      "id": 5,
+      "categoria": "Larga Distancia",
+      "nombre": "Vamos a Pinamar...",
+      "detalle": "Servicio de Traslado a la Costa - Pinamar - Carilo",
+      "precio": 40000,
+      "retorno": false,
+      "imgSrc": "/image/Veterinario/carilo.jpg"
     },
     {
-      "id": 106,
-      "categoria": "Para comer",
-      "nombre": "Pork",
-      "detalle": "Hamburguesa de cerdo, lechuga, tomate, cheddar y bacon.",
-      "precio": 1900,
-      "mayorEdad": false,
-      "imgSrc": "/img/106.webp"
+      "id": 6,
+      "categoria": "Corta Distancia",
+      "nombre": "Visita al Vete",
+      "detalle": "Servicio de Traslado de Visita al Veterinario",
+      "precio": 3000,
+      "retorno": false,
+      "imgSrc": "/image/Veterinario/veterinario2.jpg"
     },
     {
-      "id": 107,
-      "categoria": "Para comer",
-      "nombre": "Veggie",
-      "detalle": "Hamburguesa vegana, lechuga, tomate y pepino.",
-      "precio": 1800,
-      "mayorEdad": false,
-      "imgSrc": "/img/107.webp"
+      "id": 7,
+      "categoria": "Corta Distancia",
+      "nombre": "Traslado a la Peluqueria",
+      "detalle": "Servicio de traslado a la Peluqueria Canina.",
+      "precio": 3000,
+      "retorno": true,
+      "imgSrc": "/image/Veterinario/Peluqueria2.jpeg"
     },
     {
-      "id": 108,
-      "categoria": "Para comer",
-      "nombre": "Simple",
-      "detalle": "Hamburguesa de res con cheddar.",
-      "precio": 1500,
-      "mayorEdad": false,
-      "imgSrc": "/img/108.webp"
+      "id": 8,
+      "categoria": "Corta Distancia",
+      "nombre": "Nos Vamos de Paseo",
+      "detalle": "Servicios de Paseo con tu mascota",
+      "precio": 3500,
+      "retorno": true,
+      "imgSrc": "/image/Veterinario/paseo3.jpeg"
     },
-    {
-      "id": 201,
-      "categoria": "Para tomar",
-      "nombre": "Coca-Cola",
-      "detalle": "Botella 500ml.",
-      "precio": 500,
-      "mayorEdad": false,
-      "imgSrc": "/img/201.webp"
-    },
-    {
-      "id": 202,
-      "categoria": "Para tomar",
-      "nombre": "Fanta",
-      "detalle": "Botella 500ml.",
-      "precio": 500,
-      "mayorEdad": false,
-      "imgSrc": "/img/202.webp"
-    },
-    {
-      "id": 203,
-      "categoria": "Para tomar",
-      "nombre": "Sprite",
-      "detalle": "Botella 500ml.",
-      "precio": 500,
-      "mayorEdad": false,
-      "imgSrc": "/img/203.webp"
-    },
-    {
-      "id": 204,
-      "categoria": "Para tomar",
-      "nombre": "Agua s/gas",
-      "detalle": "Botella 500ml.",
-      "precio": 250,
-      "mayorEdad": false,
-      "imgSrc": "/img/204.webp"
-    },
-    {
-      "id": 205,
-      "categoria": "Para tomar",
-      "nombre": "Agua c/gas",
-      "detalle": "Botella 500ml.",
-      "precio": 250,
-      "mayorEdad": false,
-      "imgSrc": "/img/205.webp"
-    },
-    {
-      "id": 206,
-      "categoria": "Para tomar",
-      "nombre": "Golden",
-      "detalle": "Pinta 500ml.",
-      "precio": 700,
-      "mayorEdad": true,
-      "imgSrc": "/img/206.webp"
-    },
-    {
-      "id": 207,
-      "categoria": "Para tomar",
-      "nombre": "Honey",
-      "detalle": "Pinta 500ml.",
-      "precio": 700,
-      "mayorEdad": true,
-      "imgSrc": "/img/207.webp"
-    },
-    {
-      "id": 208,
-      "categoria": "Para tomar",
-      "nombre": "APA",
-      "detalle": "Pinta 500ml.",
-      "precio": 700,
-      "mayorEdad": true,
-      "imgSrc": "/img/208.webp"
-    },
-    {
-      "id": 209,
-      "categoria": "Para tomar",
-      "nombre": "IPA",
-      "detalle": "Pinta 500ml.",
-      "precio": 700,
-      "mayorEdad": true,
-      "imgSrc": "/img/209.webp"
-    },
-    {
-      "id": 210,
-      "categoria": "Para tomar",
-      "nombre": "Zero",
-      "detalle": "Stella Artois s/alcohol. Porrón 330ml.",
-      "precio": 550,
-      "mayorEdad": false,
-      "imgSrc": "/img/210.webp"
-    }
+    
   ]
   

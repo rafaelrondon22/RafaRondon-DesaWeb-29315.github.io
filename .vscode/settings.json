@@ -8,7 +8,7 @@
      ],
     "liveSassCompile.settings.excludeList":[
        "/node_modules/",
-       "/.vscode/**"
+       "/.vscode/**",
        "/.js/**"
       ],
     "liveSassCompile.settings.generateMap":true,
