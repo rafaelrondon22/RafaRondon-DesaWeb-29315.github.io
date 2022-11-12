@@ -70,7 +70,7 @@ btnsRetorno.addEventListener("click", (e) => {
     const btnsRetorno = e.target.value;
     sessionStorage.setItem("retorno", btnsRetorno);
     if (btnsRetorno === "true" || btnsRetorno === "false") {
-      modalMayorEdad.close();
+      modalRetorno.close();
     }
     retorno = JSON.parse(sessionStorage.getItem("retorno"));
     abrirModalMesa();
@@ -104,6 +104,13 @@ verPedido.addEventListener("click", (e) => {
   pintarPedido();
   e.stopPropagation();
 });
+
+//Muestra modalMesa una vez que se valida la edad
+function abrirModalMesa() {
+    if (modalRetorno.open === false) {
+      modalMesa.showModal();
+    }
+  }
 
 // botones en modalSolicitud - btnFalta / btnCancelar / btnEnviar
 btnFalta.addEventListener("click", (e) => {
@@ -182,9 +189,9 @@ function seleccion(e) {
   return itemSolicitud, edadClienteProducto;
 }
 
-// busca producto seleccionado
+// buscar servicio seleccionado
 function encuentraSeleccion(idSeleccion) {
-  itemSolicitud = menu.find((producto) => producto.id === idSeleccion);
+  itemSolicitud = menu.find((servicio) => servicio.id === idSeleccion);
   return itemSolicitud;
 }
 
@@ -217,7 +224,7 @@ function agregarAlPedido(itemSolicitud) {
   return pedido;
 }
 
-// pinta cantidad de productos en el pedido
+// pinta cantidad de servicios solicitados
 function pintarCantidad() {
   if (pedido.length === 0) {
     cantidad.style.display = "none";
@@ -380,3 +387,10 @@ function noEscape(modal) {
     });
   }
 }
+//Muestra modalMesa una vez que se valida la edad
+function abrirModalMesa() {
+    if (modalRetorno.open === false) {
+      modalMesa.showModal();
+    }
+}
+  
