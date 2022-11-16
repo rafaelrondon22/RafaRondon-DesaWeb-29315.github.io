@@ -12,7 +12,7 @@ const modalRetorno = document.getElementById("modalRetorno"),
     modalMesa = document.getElementById("modalMesa"),
     btnfecha = document.getElementById("btnfecha"),
     valFecha = document.getElementById("valFecha"),
-    btnsMenu = document.getElementById("menu"),
+    btnsMenu = document.getElementById("menu").content,
     verPedido = document.getElementById("verPedido"),
     modalSolicitud = document.getElementById("solicitud"),
     listaSolicitud = document.getElementById("listaSolicitud"),
@@ -82,7 +82,7 @@ btnfecha.addEventListener("click", (e) => {
   const inputFecha = parseFloat(
     document.getElementById("inputFecha").value
   );
-  validarNumMesa(inputFecha);
+  09(inputFecha);
   if (inputFecha > 0 && inputFecha < 21 && Number.isInteger(inputFecha)) {
     sessionStorage.setItem("numFecha", inputFecha);
     numFecha = JSON.parse(sessionStorage.getItem("numFecha"));
